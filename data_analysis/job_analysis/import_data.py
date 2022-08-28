@@ -1,4 +1,9 @@
+import os
+
 import pandas as pd
+
+PROJECT_PATH = os.path.dirname(os.path.realpath(__file__))
+
 
 class ProcessFileData(object):
     def __init__(self, file_path):
@@ -12,7 +17,8 @@ class ProcessFileData(object):
 
 
 def get_job_data():
-    procee = ProcessFileData(r"./job.csv")
+    file_path = os.path.join(PROJECT_PATH, r"job.csv")
+    procee = ProcessFileData(file_path)
     column_list = ["positionName", "companyShortName", "city", "companySize", "education", "financeStage",
                    "industryField", "salary", "workYear", "companyLabelList", "job_detail"]
     job = procee.data[column_list]

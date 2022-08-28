@@ -30,11 +30,12 @@ class Solution:
         else:
             return -res
 
+
 def main():
     s = Solution()
     res = s.myAtoi(s="42")
     print(res)
-bin()
+
 
 if __name__ == '__main__':
     main()
