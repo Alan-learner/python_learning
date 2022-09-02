@@ -37,6 +37,7 @@ def save_bar_fig(data=None, title=None, file_name=None):
     plt.grid(axis='x', linewidth=0.5, color='#3c7f99')
     fig_path = get_timed_file_path(output_path, file_name)
     plt.savefig(fig_path)
+    plt.show()
 
 
 def get_city_field_fig():
