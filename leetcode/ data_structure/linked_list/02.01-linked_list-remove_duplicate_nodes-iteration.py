@@ -17,5 +17,6 @@ class Solution:
                     occurred.add(cur.val)
                     pos = pos.next
                 else:
+                    # 链表删除节点的方式
                     pos.next = pos.next.next
             return head
