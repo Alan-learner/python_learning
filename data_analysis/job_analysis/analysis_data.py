@@ -4,6 +4,9 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontManager
+import warnings
+
+warnings.filterwarnings("ignore")  # 忽略warning
 
 from common_func.io_relate import get_timed_file_path
 from data_analysis.job_analysis.import_data import PROJECT_PATH
