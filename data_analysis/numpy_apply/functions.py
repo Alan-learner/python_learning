@@ -1,5 +1,11 @@
 import numpy as np
 
+"""
+    abs、sqrt、square、exp、log、sin、cos、tan，maxinmum、minimum、all、any、inner、clip、
+round、trace、ceil、floor
+
+"""
+
 
 def cal_array():
     arr1 = np.array([1, 4, 8, 9, 16, 25])
