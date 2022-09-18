@@ -15,7 +15,7 @@ def calculate_array():
 
 
 def apply():
-    data = np.loadtxt(r"D:\AIot\files\作业\iris.csv", delimiter=',')  # 读取数据文件，data是二维的数组
+    data = np.loadtxt(r"D:\Files\AIot\2-NumPy高级\作业\iris.csv", delimiter=',')  # 读取数据文件，data是二维的数组
     data.sort(axis=-1)  # 简单排序
     print('简单排序后：', data)
     print('数据去重后：', np.unique(data))  # 去除重复数据
