@@ -75,6 +75,16 @@ def read_aql():
     return data
 
 
+def save_hdf(data, path='./data.h5'):
+    data.to_hdf(path, key='salary')  # 保存数据的key，标记
+    data.to_hdf(path, key='score')
+
+
+def read_hdf(path="./data.h5"):
+    pd.read_hdf(path,
+                key='salary')  # 获取指定的标记、key的数据
+
+
 def main():
     pass
 
