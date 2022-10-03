@@ -27,32 +27,20 @@ class Solution:
                 cnt += i
             cur = i = j = 0
             m = len(lst2)
-            # while True:
-            #     if i == n:
-            #         lst[cur:] = lst2[j:]
-            #         break
-            #     if j == m:
-            #         lst[cur:] = lst1[i:]
-            #         break
-            #     if lst1[i] > lst2[j]:
-            #         lst[cur] = lst2[j]
-            #         j += 1
-            #     else:
-            #         lst[cur] = lst1[i]
-            #         i += 1
-            #     cur += 1
-            # return cnt
-            tmp = []
-            while lst1 and lst2:
-                if lst1 < lst2:
-                    tmp.append(lst1.pop(0))
+            while True:
+                if i == n:
+                    lst[cur:] = lst2[j:]
+                    break
+                if j == m:
+                    lst[cur:] = lst1[i:]
+                    break
+                if lst1[i] > lst2[j]:
+                    lst[cur] = lst2[j]
+                    j += 1
                 else:
-                    tmp.append(lst2.pop(0))
-            if lst1:
-                tmp += lst1
-            else:
-                tmp += lst2
-            lst = tmp
+                    lst[cur] = lst1[i]
+                    i += 1
+                cur += 1
             return cnt
 
         return merge_sort(num)
