@@ -5,28 +5,6 @@ from functools import reduce
 from heapq import heappush, heappop
 from sortedcontainers import SortedList
 
-lowbit = lambda x: x & (-x)
-
-
-# Binary Index Tree
-class BIT:
-    def __init__(self, n):
-        self.tree = [0] * n
-
-    def __len__(self):
-        return len(self.tree)
-
-    def add(self, i, val):
-        while i < self.__len__():
-            self.tree[i] += val
-            i += lowbit(i)
-
-    def query(self, i):
-        res = 0
-        while i > 0:
-            res += self.tree[i]
-            i -= lowbit(i)
-        return res
 
 
 class Solution:
@@ -36,12 +14,15 @@ class Solution:
             nums1[i] -= nums2[i]
         nums = nums1.copy()
         nums.sort()
-        tree_array = BIT(len(nums1) + 1)
+        lst = SortedList()
         ans = 0
         for x in nums1:
-            i = bisect_right(nums, x + diff)
-            ans += tree_array.query(i)
-            tree_array.add(bisect_left(nums, x) + 1, 1)
+            # 二分查找一下符合条件数字在有序数组中的位置
+            i = bisect_right(lst, x + diff)
+            # 查询当前遍历的数字所有符合条件的数的个数
+            ans += i
+            # 当前遍历的数字每出现一次，就对它的频率+1
+            lst.add(x)
 
         return ans
 
