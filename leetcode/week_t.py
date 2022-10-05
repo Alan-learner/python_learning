@@ -12,8 +12,6 @@ from sortedcontainers import SortedList
 
 lowbit = lambda x: x & (-x)
 
-# Binary Index Tree
-
 
 class Solution:
     pass
