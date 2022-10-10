@@ -29,8 +29,8 @@ class Solution:
             # j <= (n - i) // 2
             for j in range(1, (n - i) // 2 + 1):
                 # 等价于判断s[i: i + j] == s[i + j:i + 2 * j]
-                # if lcp[i][i + j] >= j:
-                if s[i: i + j] == s[i + j:i + 2 * j]:
+                if lcp[i][i + j] >= j:
+                # if s[i: i + j] == s[i + j:i + 2 * j]:
                     dp[i] = max(dp[i + j], dp[i])
             dp[i] += 1
         return dp[0]
