@@ -2,6 +2,7 @@
 # author: Alan-learner
 
 import math
+from collections import deque
 from math import inf
 from typing import List
 from bisect import bisect_left, bisect_right
@@ -16,8 +17,8 @@ from numpy import lcm
 from sortedcontainers import SortedList
 
 lowbit = lambda x: x & -x
-MOD = 10 ** 9 + 7
-
+MOD = int(1e9 + 7)
+INF = int(1e20)
 
 class Solution:
     pass
