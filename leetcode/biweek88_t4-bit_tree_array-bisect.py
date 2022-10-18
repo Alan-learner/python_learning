@@ -5,7 +5,7 @@ from functools import reduce
 from heapq import heappush, heappop
 from sortedcontainers import SortedList
 
-lowbit = lambda x: x & (-x)
+lowbit = lambda x: x & -x
 
 
 # Binary Index Tree
