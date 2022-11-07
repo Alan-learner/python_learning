@@ -14,6 +14,39 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/leetcode/editor/cn/[2454]下一个更大元素 IV.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/leetcode/editor/cn/doc/content/[2454]下一个更大元素 IV.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2454" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/leetcode/editor/cn/[2454]下一个更大元素 IV.py" />
+              <option name="titleSlug" value="next-greater-element-iv" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/leetcode/editor/cn/[2463]最小移动总距离.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/leetcode/editor/cn/doc/content/[2463]最小移动总距离.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2463" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/leetcode/editor/cn/[2463]最小移动总距离.py" />
+              <option name="titleSlug" value="minimum-total-distance-traveled" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/leetcode/editor/cn/[6223]移除子树后的二叉树高度.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/leetcode/editor/cn/doc/content/[6223]移除子树后的二叉树高度.md" />
+              <option name="frontendQuestionId" value="leetcode.cn6223" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/leetcode/editor/cn/[6223]移除子树后的二叉树高度.py" />
+              <option name="titleSlug" value="height-of-binary-tree-after-subtree-removal-queries" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
