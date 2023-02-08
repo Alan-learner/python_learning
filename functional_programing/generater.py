@@ -19,6 +19,7 @@ def main():
     for k in generater:
         print(k)
 
+
 def main2():
     # 4种访问生成器的方法
     g = gen_func(times=15)

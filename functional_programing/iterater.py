@@ -28,9 +28,9 @@ def main():
     is_iterator("df")
     is_iterator(iter([]))
     is_iterator({})
-    is_iterator(iter((3,5)))
+    is_iterator(iter((3, 5)))
     is_iterator(set())
 
 
 if __name__ == '__main__':
-    main() 
+    main()
